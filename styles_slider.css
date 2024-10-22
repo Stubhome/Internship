@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+  height: 100vh; /* Высота на весь экран */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрируем по вертикали */
+}
+
+.container {
+  max-width: 700px;
+}
+
+
+.itc-slider {
+  position: relative;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+}
+
+.itc-slider__items {
+  display: flex;
+}
+
+.itc-slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.itc-slider__item::before {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+}
+
+.itc-slider__item:nth-child(1) {
+  background-color: #f44336;
+}
+
+.itc-slider__item:nth-child(2) {
+  background-color: #9c27b0;
+}
+
+.itc-slider__item:nth-child(3) {
+  background-color: #000080;
+}
+
+.itc-slider__item:nth-child(4) {
+  background-color: #03a9f4;
+}
+
+.itc-slider__item:nth-child(5) {
+  background-color: #4caf50;
+}
+.itc-slider__item:nth-child(6) {
+  background-color: #FFFF00;
+}
+.itc-slider__item:nth-child(7) {
+  background-color: #FF00FF;
+}
+.itc-slider__item:nth-child(8) {
+  background-color: #0000FF;
+}
+.itc-slider__item:nth-child(9) {
+  background-color: #800000;
+}
+.itc-slider__item:nth-child(10) {
+  background-color: #008080;
+}
+
+.itc-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.itc-slider__btn_prev {
+  left: 10px;
+}
+
+.itc-slider__btn_next {
+  right: 10px;
+}
+
+.itc-slider__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.itc-slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.itc-slider__dot.active {
+  background-color: #000;
+}
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
